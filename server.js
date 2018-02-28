@@ -23,7 +23,7 @@ function createTemplate(data)
     var content = data.content;
     
     
-    var htmlTemplate ={
+    var htmlTemplate =`
     <html>
     <head>
        <title>
@@ -54,13 +54,15 @@ function createTemplate(data)
         </div>
         
     </body>
-</html>
-
+    
+ </html>
+ `;
+return htmlTemplate;
     
     
-};
- return htmlTemplate;
 }
+ 
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
