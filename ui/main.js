@@ -11,8 +11,11 @@ button.onclick = function()
            if(request.status == 200){
            
            var counter = request.responseText;
-           var span = document.getElementById('countt');
-           span.innerHTML = counter.toString();
+           //var span = document.getElementById('countt');
+           //span.innerHTML = counter.toString();
+           document.getElementById('countt').innerHTML = counter.toString();
+           
+           
            }
        }
    };
