@@ -98,7 +98,7 @@ app.post('/create-user',function(req, res){
         else{
             res.send('user sucessfully created' + username);
         }
-   })
+   });
 });
 
 var pool = new Pool(config);
