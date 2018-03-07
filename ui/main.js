@@ -29,6 +29,7 @@
 var submit = document.getElementById('submit_btn');
 submit.onclick = function()
 {
+    console.log('inside on click function');
     
     var request = new XMLHttpRequest();
    
